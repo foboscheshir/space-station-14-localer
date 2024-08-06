@@ -173,3 +173,19 @@
       - minTemperature: 345
   - node: bacon
     entity: FoodMeatBaconCooked
+
+    # raw cutlet
+    type: constructionGraph
+    id: FoodMeatCutlet
+    start: start
+    graph:
+    node: start
+    edges:
+    to: FoodMeatCutletCooked
+    completed:
+     !type:PlaySound 
+    sound: /Audio/Effects/sizzle.ogg
+    steps:
+    minTemperature: 345
+    node: FoodMeatCutlet
+    entity: FoodMeatCutletCooked

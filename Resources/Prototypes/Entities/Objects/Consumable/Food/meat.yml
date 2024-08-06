@@ -1094,6 +1094,9 @@
           Quantity: 3
         - ReagentId: Fat
           Quantity: 2
+    type: Construction
+    graph: FoodMeatCutlet
+    node: Raw cutlet
 
 - type: entity
   name: raw bear cutlet
